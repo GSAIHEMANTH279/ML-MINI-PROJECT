@@ -72,3 +72,35 @@ The extraction and combined model have not been run here because the raw image v
 
 - TCIA CPTAC-PDA tumor annotations (official analysis-results entry): https://www.cancerimagingarchive.net/annotated-cptac-datasets-available-on-tcia/
 - Related multi-omic radiomics implementation: https://github.com/FraBer95/MultiOmicPDA
+
+
+## Automated CPTAC-PDA CT radiomics workflow
+
+TCIA publishes a CPTAC-PDA annotation metadata CSV and RTSTRUCT tumour annotations. The included `src/download_extract_tcia_radiomics.py` matches annotated CT series to the cleaned clinical cohort, downloads a limited subset, and extracts MIRP features.
+
+Install packages:
+```powershell
+python -m pip install -r requirements-radiomics.txt
+```
+
+First check the number of matching annotated CT patients without downloading images:
+```powershell
+python src/download_extract_tcia_radiomics.py --inventory-only
+```
+
+If the candidate list is appropriate and you have several GB free, download and extract up to 30 patients:
+```powershell
+python src/download_extract_tcia_radiomics.py --limit 30
+```
+
+Or download only:
+```powershell
+python src/download_extract_tcia_radiomics.py --limit 30 --download-only
+```
+
+Then compare clinical-only, radiomics-only, and combined Cox models:
+```powershell
+python src/train_combined_model.py
+```
+
+The workflow writes `data/tcia_matched_annotation_candidates.csv`, `data/radiomics_features.csv`, and comparison metrics under `outputs/`. It selects one CT/RTSTRUCT pair per patient, preferring pre-dose and then earlier scans. This is a reproducible selection heuristic, not radiologist validation. Check that the chosen RTSTRUCT contains a suitable tumour ROI and matches its referenced CT. Images are real DICOM downloads and may require multiple GB and substantial time. Do not claim combined-model results unless extraction and model evaluation finish successfully.
