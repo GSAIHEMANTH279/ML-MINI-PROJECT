@@ -1,0 +1,39 @@
+# Pancreatic Cancer Prognosis Using Clinical and Radiomic Data
+
+## Current verified status
+This repository contains a run and evaluated **clinical-only survival-analysis baseline** using the uploaded PDC CPTAC-PDA clinical export. The radiomic part is **not yet implemented in the trained model**, because no radiomic feature table was included in the provided files. The TCIA imaging manifest has 110 unique imaging IDs; 73 of the 143 usable clinical survival records have matching IDs in that manifest. ID overlap alone does not equal radiomic data availability.
+
+## Data and outcome
+The raw PDC clinical export had 166 rows. We used `survival_days`: `Days to Death` for `Dead`; `Days to Last Follow Up` for `Alive`. `event` is 1 for `Dead` and 0 for `Alive` (right-censored). Unknown/unreported vital status, missing duration, and non-positive duration were excluded.
+
+The cleaned file contains 143 cases (115 deaths, 28 right-censored). This is an exploratory research dataset, not for clinical decisions.
+
+## Model
+Penalized Cox proportional hazards model with three clinical predictors: age at diagnosis (years), sex (female indicator), and tumor grade (G3/G4 grouped as high grade).
+
+Five-fold shuffled cross-validation (seed 42) yielded mean fold C-index **0.567** (SD 0.043) and pooled out-of-fold C-index **0.574**. These are internal exploratory estimates on a small cohort with limited predictors. They are not external validation and do not reproduce the Stanford paper's clinical-plus-radiomic model or its reported results.
+
+## Run on Windows
+1. Install Python 3.10+.
+2. Open a terminal in this folder.
+3. `py -m venv .venv`
+4. `.venv\\Scripts\\activate`
+5. `python -m pip install -r requirements.txt`
+6. `python src/train_model.py`
+
+The script writes metrics, cross-validation fold scores, Cox coefficients and plots to `outputs/`.
+
+## Folder structure
+- `data/`: cleaned clinical outcomes, matched-ID list, data dictionary
+- `src/train_model.py`: reproducible Cox model and 5-fold evaluation
+- `outputs/`: metrics and plots
+- `reports/`: report and slide deck
+
+## Required next milestone
+Obtain or extract actual radiomic features from tumor-annotated CPTAC-PDA imaging, verify patient-ID matching, and compare clinical-only versus radiomic-only versus combined models with leakage-aware cross-validation. Until that step is completed, describe this as a clinical-only baseline rather than a completed clinical-plus-radiomic model.
+
+## Sources
+- TCIA CPTAC-PDA collection: https://www.cancerimagingarchive.net/collection/cptac-pda/
+- PDC CPTAC PDA Discovery Study clinical export (downloaded by user)
+- Jamalian, Stanford CS229 reference paper (provided by user)
+- Related research repository: https://github.com/FraBer95/MultiOmicPDA
