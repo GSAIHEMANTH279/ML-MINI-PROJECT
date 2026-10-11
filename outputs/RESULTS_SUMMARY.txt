@@ -1,11 +1,9 @@
-EXECUTED CLINICAL-ONLY BASELINE
+CLINICAL-ONLY COX BASELINE
 Patients: 143
 Observed deaths: 115
-Right-censored alive: 28
-Predictors: age_years, female, high_grade
-Validation: 5-fold shuffled CV, random seed 42
-Mean fold C-index: 0.5667
-SD of fold C-index: 0.0431
-Pooled out-of-fold C-index: 0.5739
+Right-censored: 28
+Mean five-fold C-index: 0.567
+Fold standard deviation: 0.043
+Pooled out-of-fold C-index: 0.574
 
-IMPORTANT: Radiomic features were not used. These results do not represent a clinical-plus-radiomic model and are not external clinical validation.
+These are exploratory internal estimates. Radiomic features were not used. This is not the combined model described by the reference paper and is not external clinical validation.
