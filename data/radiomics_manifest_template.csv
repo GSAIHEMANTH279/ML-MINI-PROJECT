@@ -1,0 +1,3 @@
+patient_id,image_path,mask_path
+# Replace this example row with real, local paths. Remove comment rows before running.
+# C3L-XXXXX,C:/data/images/patient.nii.gz,C:/data/masks/patient_mask.nii.gz
