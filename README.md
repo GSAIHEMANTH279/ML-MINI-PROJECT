@@ -69,3 +69,6 @@ The extraction and combined model have not been run here because the raw image v
 - [Clinical/radiomic comparison script](src/train_combined_model.py)
 - [Radiomics manifest template](data/radiomics_manifest_template.csv)
 - [Optional radiomics dependencies](requirements-radiomics.txt)
+
+- TCIA CPTAC-PDA tumor annotations (official analysis-results entry): https://www.cancerimagingarchive.net/annotated-cptac-datasets-available-on-tcia/
+- Related multi-omic radiomics implementation: https://github.com/FraBer95/MultiOmicPDA
