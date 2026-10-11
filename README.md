@@ -37,3 +37,17 @@ Obtain or extract actual radiomic features from tumor-annotated CPTAC-PDA imagin
 - PDC CPTAC PDA Discovery Study clinical export (downloaded by user)
 - Jamalian, Stanford CS229 reference paper (provided by user)
 - Related research repository: https://github.com/FraBer95/MultiOmicPDA
+
+## Repository artifacts
+- [Cleaned clinical survival cohort](data/cptac_pda_clinical_survival_clean.csv)
+- [Clinical/imaging ID overlap table](data/cptac_pda_clinical_imaging_overlap.csv) — ID overlap only, not a radiomics table
+- [Model metrics](outputs/metrics.json)
+- [Data audit and limitations](outputs/data_audit.json)
+- [Cross-validation folds](outputs/cross_validation_folds.csv)
+- [Cox coefficients and hazard ratios](outputs/clinical_cox_coefficients.csv)
+- [C-index visual summary](outputs/clinical_only_c_index.svg)
+- [Report outline](reports/report_outline.md)
+- [Presentation outline](reports/presentation_outline.md)
+- [Python validation workflow](.github/workflows/python-check.yml)
+
+The PDF and PowerPoint versions are currently available in the accompanying project ZIP, not as files in this repository. The Markdown report and presentation outlines are published here.
