@@ -1,0 +1,19 @@
+{
+  "analysis": "clinical-only exploratory Cox proportional hazards",
+  "n_patients": 143,
+  "n_deaths": 115,
+  "n_right_censored": 28,
+  "features": [
+    "age_years",
+    "female",
+    "high_grade"
+  ],
+  "cv_folds": 5,
+  "random_seed": 42,
+  "penalizer": 0.1,
+  "mean_fold_c_index": 0.5666509739332029,
+  "sd_fold_c_index": 0.04313902316676825,
+  "pooled_out_of_fold_c_index": 0.5739025856885147,
+  "interpretation": "Exploratory estimate on this dataset; small sample and limited predictors. Not clinical validation.",
+  "limitation": "No radiomic features were used. Do not claim reproduction of the reference paper's clinical-plus-radiomic model."
+}
