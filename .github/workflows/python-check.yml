@@ -17,4 +17,4 @@ jobs:
       - name: Install dependencies
         run: python -m pip install -r requirements.txt
       - name: Check Python syntax
-        run: python -m py_compile src/train_model.py src/extract_radiomics.py src/train_combined_model.py
+        run: python -m py_compile src/train_model.py src/extract_radiomics.py src/train_combined_model.py src/download_extract_tcia_radiomics.py
