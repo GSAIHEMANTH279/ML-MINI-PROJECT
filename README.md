@@ -64,3 +64,8 @@ python src/extract_radiomics.py
 python src/train_combined_model.py
 ```
 The extraction and combined model have not been run here because the raw image volumes and tumor segmentation masks have not been downloaded and validated. Do not report combined-model metrics until the pipeline has run on real extracted features.
+
+- [PyRadiomics extraction script](src/extract_radiomics.py)
+- [Clinical/radiomic comparison script](src/train_combined_model.py)
+- [Radiomics manifest template](data/radiomics_manifest_template.csv)
+- [Optional radiomics dependencies](requirements-radiomics.txt)
