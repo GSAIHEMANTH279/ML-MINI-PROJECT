@@ -51,3 +51,16 @@ Obtain or extract actual radiomic features from tumor-annotated CPTAC-PDA imagin
 - [Python validation workflow](.github/workflows/python-check.yml)
 
 The PDF and PowerPoint versions are currently available in the accompanying project ZIP, not as files in this repository. The Markdown report and presentation outlines are published here.
+
+## Radiomics pipeline (requires real images and masks)
+The repository now includes:
+- `src/extract_radiomics.py`: extracts PyRadiomics features from each CT volume and corresponding segmentation mask listed in `data/radiomics_manifest.csv`.
+- `data/radiomics_manifest_template.csv`: header template for patient IDs and local image/mask paths.
+- `src/train_combined_model.py`: compares clinical-only, radiomics-only and combined Cox models after matching IDs; radiomic feature selection is performed within training folds.
+
+Install the optional extraction dependencies with `python -m pip install pyradiomics SimpleITK`. Copy the manifest template to `data/radiomics_manifest.csv`, fill it with actual local paths to images and validated tumor masks, and run:
+```bash
+python src/extract_radiomics.py
+python src/train_combined_model.py
+```
+The extraction and combined model have not been run here because the raw image volumes and tumor segmentation masks have not been downloaded and validated. Do not report combined-model metrics until the pipeline has run on real extracted features.
