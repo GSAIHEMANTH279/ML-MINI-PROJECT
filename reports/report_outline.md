@@ -18,3 +18,9 @@ Radiomic features and tumor annotations have not been integrated. Do not claim r
 ## Sources
 - https://www.cancerimagingarchive.net/collection/cptac-pda/
 - https://github.com/FraBer95/MultiOmicPDA
+
+## Validation and reproducibility
+The repository includes a Python validation workflow at `.github/workflows/python-check.yml`, which installs requirements and checks model syntax on pushes and pull requests. Run the script locally using README instructions.
+
+## Data governance
+Patient-level clinical data should only be shared when the source license and data-use terms permit public redistribution.
