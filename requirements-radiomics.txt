@@ -1,2 +1,7 @@
-pyradiomics>=3.0.1
-SimpleITK>=2.3
+tcia-utils>=3.0.0
+mirp>=2.5.0
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
