@@ -1,5 +1,12 @@
+# Optional dependencies for local DICOM/RTSTRUCT and image-volume workflows.
+# Install only when running radiomics scripts; imaging downloads are not included.
 tcia-utils>=3.0.0
 mirp>=2.5.0
+pyradiomics
+pydicom
+rt-utils
+SimpleITK
+nibabel
 numpy
 pandas
 scipy
