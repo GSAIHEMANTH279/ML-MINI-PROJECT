@@ -1,25 +1,28 @@
-# Presentation Outline
+# Mini-Project Presentation Outline
 
 ## Slide 1 — Title
 Pancreatic Cancer Prognosis Using Clinical and Radiomic Data.
 
 ## Slide 2 — Objective
-Investigate clinical predictors of survival in pancreatic ductal adenocarcinoma and prepare for comparison with imaging-derived radiomic features.
+Explore clinical survival predictors and demonstrate a CT-radiomics extraction workflow for pancreatic cancer imaging.
 
-## Slide 3 — Data
-166 clinical records in the source export; 143 usable survival records after cleaning; 115 observed deaths and 28 right-censored cases.
+## Slide 3 — Clinical data
+The source export contained 166 rows; 143 cases had valid survival duration and known vital status after cleaning. There were 115 observed deaths and 28 right-censored observations.
 
-## Slide 4 — Imaging Linkage
-110 unique patient IDs in the TCIA manifest; 73 IDs overlap the cleaned clinical cohort. Matching IDs do not guarantee usable radiomic feature values.
+## Slide 4 — Clinical model
+Penalized Cox proportional-hazards model with age, female indicator, and high-grade indicator. Five-fold shuffled cross-validation, seed 42, penalizer 0.1.
 
-## Slide 5 — Method
-Penalized Cox proportional hazards model using age, sex and tumor grade; five-fold shuffled cross-validation with seed 42.
+## Slide 5 — Clinical-only results
+Mean fold C-index: 0.567 (SD 0.043). Pooled out-of-fold C-index: 0.574. These are exploratory internal estimates, not external validation.
 
-## Slide 6 — Results
-Mean fold C-index 0.567 (SD 0.043); pooled out-of-fold C-index 0.574. These are exploratory internal estimates.
+## Slide 6 — CT radiomics feasibility
+Saved feature table: three matched patients and 30 detected radiomics feature columns. The checked C3N-00302 RTSTRUCT had 29 referenced CT SOP instances present in the recovered CT folder, with zero missing references.
 
 ## Slide 7 — Limitations
-The trained model is clinical-only. Radiomic features and tumor annotations are not yet integrated. Results are not external validation.
+The three matched radiomics cases all have observed events and none are censored. This is too small to evaluate a combined survival model. Referenced-slice availability does not prove complete 3D segmentation validity. The executed survival model is clinical-only.
 
-## Slide 8 — Next Steps
-Obtain real radiomic features for matched patients and compare clinical-only, radiomic-only and combined models.
+## Slide 8 — Conclusion and next steps
+The clinical-only baseline runs reproducibly and the radiomics extraction is demonstrated as a feasibility workflow. Future work needs a larger, quality-controlled matched cohort before comparing clinical-only, radiomics-only, and combined models.
+
+## Presentation note
+Do not claim the combined model was trained, validated, or achieved a performance score.
