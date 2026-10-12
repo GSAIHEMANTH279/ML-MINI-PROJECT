@@ -1,9 +1,22 @@
-CLINICAL-ONLY COX BASELINE
+PANCREATIC CANCER PROGNOSIS MINI-PROJECT — VERIFIED RESULTS SUMMARY
+
+CLINICAL-ONLY COX BASELINE (executed)
 Patients: 143
 Observed deaths: 115
 Right-censored: 28
-Mean five-fold C-index: 0.567
+Predictors: age_years, female, high_grade
+Five-fold CV seed: 42; penalizer: 0.1
+Mean fold C-index: 0.567
 Fold standard deviation: 0.043
 Pooled out-of-fold C-index: 0.574
 
-These are exploratory internal estimates. Radiomic features were not used. This is not the combined model described by the reference paper and is not external clinical validation.
+RADIOMICS FEASIBILITY (saved extraction outputs)
+Matched radiomics patient rows: 3
+Detected radiomics feature columns: 30
+Matched events: 3
+Matched right-censored observations: 0
+Extraction error rows: 0
+RTSTRUCT-referenced CT SOP instances checked for C3N-00302: 29 present, 0 missing.
+
+INTERPRETATION AND LIMITATIONS
+The clinical metrics are exploratory internal estimates, not external validation or evidence of clinical utility. Radiomics was extracted only as a feasibility demonstration. Three matched cases with no censored observations are insufficient to evaluate a combined survival model. The CT reference check confirms referenced-slice availability only; it does not prove full 3D contour completeness or clinical validity. Do not claim that a combined clinical-plus-radiomics model was trained or validated.
