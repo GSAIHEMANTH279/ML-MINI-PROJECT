@@ -1,0 +1,13 @@
+﻿.venv/
+.venv-*/
+__pycache__/
+*.py[cod]
+.env
+tciaDownload/
+data/raw/
+data/dicom/
+outputs/selected_ct_series/
+outputs/recovery/
+*.nii
+*.nii.gz
+*.dcm

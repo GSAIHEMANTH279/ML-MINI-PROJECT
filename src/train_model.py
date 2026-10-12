@@ -62,6 +62,7 @@ def make_features(df):
     x=pd.DataFrame(index=df.index)
     x["age_years"]=pd.to_numeric(df["age_years"],errors="coerce")
     x["female"]=(df["sex"].astype(str).str.lower()=="female").astype(float)
+    # Low-count grades are grouped to limit model complexity.
     x["high_grade"]=df["tumor_grade"].astype(str).str.upper().isin(["G3","G4"]).astype(float)
     return x
 
@@ -102,6 +103,7 @@ def main():
     pooled_c=concordance_index(df["survival_days"],df["event"],oof)
     fold_mean=float(np.nanmean([r["c_index"] for r in fold_results]))
     fold_sd=float(np.nanstd([r["c_index"] for r in fold_results],ddof=1))
+    # Fit final descriptive model on all rows for coefficient/plot output.
     X=make_features(df); X=X.fillna(X.median())
     scaler=StandardScaler().fit(X); Xs=scaler.transform(X)
     beta=fit_cox(Xs,df["survival_days"],df["event"],args.penalizer)
@@ -117,11 +119,13 @@ def main():
       "interpretation":"Exploratory estimate on this dataset; small sample and limited predictors. Not clinical validation.",
       "limitation":"No radiomic features were used. Do not claim reproduction of the reference paper's clinical-plus-radiomic model."}
     (OUT/"metrics.json").write_text(json.dumps(metrics,indent=2))
+    # Risk score histogram (in-sample final fit, descriptive only)
     risk_all=Xs@beta
     plt.figure(figsize=(7,4.5)); plt.hist(risk_all,bins=14)
     plt.xlabel("Relative prognostic score (higher = higher estimated hazard)")
     plt.ylabel("Patients"); plt.title("Clinical-only Cox model risk scores")
     plt.tight_layout(); plt.savefig(OUT/"clinical_risk_scores.png",dpi=180); plt.close()
+    # KM curves by median out-of-fold risk, for descriptive visualization
     groups=oof>=np.nanmedian(oof)
     plt.figure(figsize=(7,4.5))
     for label,mask in [("Lower predicted risk",~groups),("Higher predicted risk",groups)]:
