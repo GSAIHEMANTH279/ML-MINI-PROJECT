@@ -1,0 +1,13 @@
+RADIOMICS + CLINICAL COHORT READINESS
+Clinical file: data\cptac_pda_clinical_survival_clean.csv
+Radiomics rows: 3
+Clinical rows: 143
+Matched rows: 3
+Radiomics patient IDs absent from clinical data: none
+Events among matched rows: 3
+Censored observations among matched rows: 0
+Radiomics feature columns detected: 30
+
+DECISION: Do not fit or report a combined survival model from this cohort.
+The matched sample is too small for a meaningful model evaluation.
+Use the radiomics extraction as a feasibility demonstration and report the clinical-only baseline separately.

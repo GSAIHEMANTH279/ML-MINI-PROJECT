@@ -1,0 +1,144 @@
+patient_id,age_years,sex,tumor_grade,race,ethnicity,survival_days,event,vital_status_source
+C3L-00017,69.40177960301163,male,G2,white,not hispanic or latino,426.0,0,Alive
+C3L-00102,42.75427789185489,male,G3,white,not hispanic or latino,249.0,1,Dead
+C3L-00189,68.33127994524298,female,G2,other,not reported,1036.0,1,Dead
+C3L-00277,69.85626283367556,male,G2,white,not reported,610.0,1,Dead
+C3L-00401,62.945927446954144,female,G2,other,not reported,1262.0,1,Dead
+C3L-00589,80.27926078028747,male,G2,white,not hispanic or latino,1752.0,0,Alive
+C3L-00598,61.50855578370979,female,G2,white,not reported,422.0,1,Dead
+C3L-00599,62.3709787816564,male,G1,other,not reported,1352.0,1,Dead
+C3L-00622,72.870636550308,male,G1,other,not reported,1041.0,1,Dead
+C3L-00625,34.86926762491444,female,G2,white,not reported,1198.0,1,Dead
+C3L-00640,59.32101300479124,female,G2,white,not hispanic or latino,594.0,0,Alive
+C3L-00819,74.20670773442848,male,G3,white,not hispanic or latino,603.0,1,Dead
+C3L-00881,80.30116358658454,male,G2,white,not hispanic or latino,3.0,0,Alive
+C3L-00928,58.639288158795345,female,G1,white,not hispanic or latino,761.0,1,Dead
+C3L-01031,65.11704312114989,female,G2,other,not reported,369.0,0,Alive
+C3L-01036,64.22176591375771,male,G2,other,not reported,881.0,1,Dead
+C3L-01037,42.79260780287474,male,G4,other,not reported,300.0,1,Dead
+C3L-01052,64.87611225188228,female,G2,other,not reported,743.0,1,Dead
+C3L-01053,76.10677618069815,female,G2,other,not reported,191.0,1,Dead
+C3L-01054,38.42847364818618,female,G2,other,not reported,860.0,1,Dead
+C3L-01124,70.9678302532512,female,G2,other,not reported,399.0,0,Alive
+C3L-01328,71.91786447638604,male,G3,white,not hispanic or latino,271.0,0,Alive
+C3L-01453,69.74127310061601,male,G2,white,hispanic or latino,5.0,0,Alive
+C3L-01598,73.09240246406571,female,G2,white,not hispanic or latino,913.0,1,Dead
+C3L-01637,78.5927446954141,female,G2,white,not hispanic or latino,715.0,1,Dead
+C3L-01662,60.17522245037645,female,G2,white,not hispanic or latino,344.0,1,Dead
+C3L-01687,78.95414099931554,female,G2,other,not reported,376.0,1,Dead
+C3L-01689,62.072553045859,male,G2,other,not reported,594.0,1,Dead
+C3L-01703,62.70225872689939,male,G3,other,not reported,287.0,1,Dead
+C3L-01971,66.69130732375086,male,G3,white,not hispanic or latino,276.0,1,Dead
+C3L-02109,79.08281998631075,female,G2,other,not reported,261.0,0,Alive
+C3L-02112,66.95414099931554,male,G2,white,not reported,1747.0,1,Dead
+C3L-02115,80.04654346338124,male,G2,other,not reported,723.0,1,Dead
+C3L-02116,67.60301163586584,male,G2,asian,not reported,1063.0,1,Dead
+C3L-02118,67.98631074606433,female,G2,asian,not reported,632.0,1,Dead
+C3L-02463,63.827515400410675,male,G2,white,not hispanic or latino,740.0,0,Alive
+C3L-02604,84.89253935660507,female,G1,white,not hispanic or latino,118.0,1,Dead
+C3L-02606,68.85147159479808,female,G2,other,not reported,403.0,1,Dead
+C3L-02610,80.86516084873374,male,G2,other,not reported,190.0,1,Dead
+C3L-02613,52.199863107460644,female,G3,asian,not reported,211.0,1,Dead
+C3L-02701,72.12867898699521,male,G2,white,not reported,243.0,1,Dead
+C3L-02809,84.01095140314852,male,G2,white,not hispanic or latino,68.0,1,Dead
+C3L-02890,65.84531143052703,male,G3,other,not reported,1007.0,1,Dead
+C3L-02897,80.78576317590691,male,G2,white,not hispanic or latino,256.0,0,Alive
+C3L-02899,73.11430527036276,male,G2,white,not hispanic or latino,91.0,1,Dead
+C3L-03123,60.60780287474333,female,G2,other,not reported,1777.0,0,Alive
+C3L-03129,68.21902806297057,male,G2,asian,not reported,1798.0,0,Alive
+C3L-03350,63.18412046543463,male,G2,white,not reported,613.0,1,Dead
+C3L-03356,71.45242984257358,male,G2,white,not reported,550.0,0,Alive
+C3L-03371,53.61259411362081,male,G2,other,not reported,560.0,1,Dead
+C3L-03388,68.13689253935661,male,G2,other,not reported,11.0,1,Dead
+C3L-03394,66.00958247775496,female,G1,other,not reported,635.0,1,Dead
+C3L-03395,78.02327173169063,male,G2,other,not reported,88.0,1,Dead
+C3L-03628,69.21834360027378,female,G2,other,not reported,596.0,1,Dead
+C3L-03630,78.50513347022587,male,G2,other,not reported,78.0,0,Alive
+C3L-03632,74.05886379192334,male,G1,other,not reported,1481.0,1,Dead
+C3L-03635,63.72073921971253,male,G2,other,not reported,854.0,1,Dead
+C3L-03639,76.00547570157427,male,G3,other,not reported,246.0,1,Dead
+C3L-03743,71.32375085557837,female,G3,white,not hispanic or latino,732.0,1,Dead
+C3L-04027,69.47296372347706,male,G2,white,not reported,240.0,0,Alive
+C3L-04072,55.88774811772758,male,G3,black or african american,not hispanic or latino,225.0,1,Dead
+C3L-04080,70.80629705681041,male,G3,white,not hispanic or latino,20.0,1,Dead
+C3L-04473,67.21423682409309,female,G2,other,not reported,290.0,1,Dead
+C3L-04475,77.80698151950719,male,G2,white,not reported,893.0,1,Dead
+C3L-04479,66.27515400410678,male,G3,other,not reported,1590.0,1,Dead
+C3L-04495,36.89801505817933,female,G2,white,not reported,288.0,1,Dead
+C3L-04848,71.96167008898016,female,G3,other,not reported,196.0,1,Dead
+C3L-04853,85.48117727583846,female,G2,other,not reported,279.0,1,Dead
+C3N-00198,55.59479808350445,male,G2,white,not hispanic or latino,1592.0,0,Alive
+C3N-00249,71.4798083504449,male,G2,white,not hispanic or latino,1590.0,1,Dead
+C3N-00302,58.95140314852841,male,G3,white,not reported,323.0,1,Dead
+C3N-00303,65.95756331279945,male,G3,white,not reported,599.0,1,Dead
+C3N-00436,69.60164271047228,female,G3,white,not reported,718.0,1,Dead
+C3N-00511,45.05133470225873,female,G2,white,not reported,991.0,1,Dead
+C3N-00512,42.59822039698837,male,G2,white,not reported,1006.0,1,Dead
+C3N-00513,63.30184804928131,male,G3,white,not reported,394.0,1,Dead
+C3N-00514,60.388774811772755,male,G2,white,not reported,1874.0,1,Dead
+C3N-00516,68.8952772073922,male,G3,white,not reported,1152.0,1,Dead
+C3N-00517,69.56057494866529,female,G2,white,not reported,1142.0,1,Dead
+C3N-00518,69.71115674195757,male,G3,white,not reported,427.0,1,Dead
+C3N-00957,74.16563997262149,male,G2,white,not hispanic or latino,1189.0,0,Alive
+C3N-01011,77.45106091718002,female,G2,white,not hispanic or latino,1068.0,0,Alive
+C3N-01012,71.05544147843942,male,G2,white,not hispanic or latino,1824.0,0,Alive
+C3N-01165,63.134839151266256,female,G2,white,not reported,241.0,1,Dead
+C3N-01166,62.67488021902806,female,G2,white,not reported,1170.0,1,Dead
+C3N-01167,77.06776180698152,female,G2,white,not reported,754.0,1,Dead
+C3N-01168,60.70362765229295,female,G2,white,not reported,415.0,1,Dead
+C3N-01375,70.89664613278576,female,G2,white,not reported,143.0,1,Dead
+C3N-01379,65.09240246406571,female,G2,white,not reported,971.0,1,Dead
+C3N-01380,66.02874743326488,male,G2,white,not reported,400.0,1,Dead
+C3N-01381,43.1047227926078,female,G2,white,not reported,455.0,1,Dead
+C3N-01382,74.2943189596167,female,G3,white,not reported,764.0,1,Dead
+C3N-01383,80.53935660506502,female,G2,white,not reported,791.0,1,Dead
+C3N-01388,53.242984257357975,female,G2,white,not reported,811.0,1,Dead
+C3N-01502,75.35112936344969,male,G2,white,not hispanic or latino,1695.0,0,Alive
+C3N-01714,63.41683778234086,male,G2,white,not reported,435.0,1,Dead
+C3N-01715,61.69472963723477,female,G3,white,not reported,109.0,1,Dead
+C3N-01716,50.220396988364136,male,G3,white,not reported,335.0,1,Dead
+C3N-01719,63.17043121149897,female,G2,white,not reported,547.0,1,Dead
+C3N-01900,53.374401095140314,male,G2,white,not reported,831.0,1,Dead
+C3N-01907,62.458590006844624,male,G2,white,not reported,440.0,1,Dead
+C3N-01997,63.43326488706366,male,G2,asian,not reported,1035.0,1,Dead
+C3N-01998,69.24845995893224,male,G2,asian,not reported,186.0,1,Dead
+C3N-02010,62.26420260095825,female,G3,black or african american,not hispanic or latino,449.0,0,Alive
+C3N-02295,56.28199863107461,female,G1,white,not reported,371.0,1,Dead
+C3N-02573,41.93292265571527,female,G2,asian,not reported,479.0,0,Alive
+C3N-02579,51.80561259411362,female,G2,asian,not reported,358.0,1,Dead
+C3N-02585,65.17180013689254,male,G3,asian,not reported,1189.0,1,Dead
+C3N-02589,71.2060232717317,male,G2,white,not reported,398.0,1,Dead
+C3N-02592,63.841204654346335,female,G2,white,not reported,294.0,1,Dead
+C3N-02768,46.64476386036961,male,G3,asian,not reported,430.0,1,Dead
+C3N-02940,64.47638603696099,male,G2,asian,not reported,1209.0,1,Dead
+C3N-02944,62.00684462696783,female,G2,asian,not reported,609.0,0,Alive
+C3N-02971,78.39835728952772,female,G1,white,not hispanic or latino,70.0,1,Dead
+C3N-02998,64.9801505817933,female,G2,white,not reported,650.0,1,Dead
+C3N-03000,57.06776180698152,male,G3,white,not reported,487.0,1,Dead
+C3N-03006,64.31759069130733,female,G2,white,not reported,708.0,0,Alive
+C3N-03007,59.60848733744011,male,G2,white,not reported,58.0,1,Dead
+C3N-03061,62.899383983572896,female,G3,asian,not reported,139.0,1,Dead
+C3N-03069,50.732375085557834,female,G2,asian,not reported,20.0,1,Dead
+C3N-03086,69.82067077344284,male,G2,asian,not reported,760.0,1,Dead
+C3N-03173,64.78302532511978,male,G2,white,not hispanic or latino,32.0,0,Alive
+C3N-03190,31.920602327173167,male,G1,asian,not reported,398.0,1,Dead
+C3N-03211,43.937029431895965,male,G2,asian,not reported,286.0,1,Dead
+C3N-03426,68.42984257357973,female,G2,white,not reported,123.0,1,Dead
+C3N-03428,63.40588637919233,male,G2,white,not reported,286.0,1,Dead
+C3N-03430,54.59000684462697,female,G2,white,not reported,39.0,1,Dead
+C3N-03439,56.88158795345654,female,G2,white,not reported,458.0,1,Dead
+C3N-03440,54.458590006844624,female,G2,white,not reported,315.0,0,Alive
+C3N-03665,63.43052703627652,male,G2,white,not reported,1082.0,1,Dead
+C3N-03666,63.59479808350445,male,G2,white,not reported,701.0,1,Dead
+C3N-03670,60.328542094455855,male,G2,white,not reported,1533.0,1,Dead
+C3N-03754,44.53388090349076,male,G2,white,not reported,815.0,1,Dead
+C3N-03780,69.19917864476386,female,G2,white,not reported,20.0,1,Dead
+C3N-03839,54.63655030800821,female,G2,asian,not reported,1858.0,0,Alive
+C3N-03840,59.54551676933607,female,G2,asian,not reported,1065.0,1,Dead
+C3N-03853,49.215605749486656,female,G2,asian,not reported,393.0,1,Dead
+C3N-03884,64.58590006844626,female,G2,asian,not reported,680.0,1,Dead
+C3N-04119,54.280629705681044,male,G2,asian,not reported,305.0,1,Dead
+C3N-04126,43.006160164271044,male,G3,asian,not reported,348.0,1,Dead
+C3N-04282,75.83572895277207,male,G3,white,not reported,303.0,1,Dead
+C3N-04283,66.22039698836413,female,G3,white,not reported,1.0,1,Dead
+C3N-04284,80.2819986310746,female,G3,white,not reported,8.0,1,Dead
