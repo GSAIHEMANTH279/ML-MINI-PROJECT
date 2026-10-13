@@ -11,3 +11,5 @@ data/dicom/
 *.dcm
 
 outputs/recovery/missing_ct_series.zip
+
+outputs/recovery/missing_ct_series.zip
