@@ -9,3 +9,5 @@ data/dicom/
 *.nii
 *.nii.gz
 *.dcm
+
+outputs/recovery/missing_ct_series.zip
