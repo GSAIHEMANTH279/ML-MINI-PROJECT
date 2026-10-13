@@ -1,0 +1,24 @@
+{
+  "source": "PDC CPTAC PDA Discovery Study clinical export supplied by user",
+  "source_clinical_rows": 166,
+  "records_dead": 115,
+  "records_alive": 29,
+  "records_missing_or_unreported_vital_status": 22,
+  "usable_survival_rows": 143,
+  "usable_deaths": 115,
+  "usable_right_censored": 28,
+  "TCIA_unique_imaging_patient_ids": 110,
+  "clinical_survival_patients_matching_TCIA_imaging_manifest": 73,
+  "interpretation": "ID overlap only; it does not prove usable radiomic features or tumor annotations are available.",
+  "outcome_definition": "Dead: Days to Death, event=1. Alive: Days to Last Follow Up, event=0. Exclude unknown status and missing/nonpositive duration.",
+  "model": "Penalized Cox proportional hazards model with age, female indicator, high-grade indicator; five-fold shuffled cross-validation, seed 42.",
+  "cv_mean_fold_c_index": 0.5666509739332029,
+  "cv_sd_fold_c_index": 0.04313902316676825,
+  "pooled_oof_c_index": 0.5739025856885147,
+  "critical_limitations": [
+    "Clinical-only model; no radiomic features used.",
+    "Full clinical-plus-radiomic model remains unfinished.",
+    "Small exploratory cohort and internal cross-validation only; not external validation.",
+    "Reference-paper metrics are not results from this project."
+  ]
+}
